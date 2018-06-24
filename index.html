@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kassim Santone's Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/tic-tac-toe.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Kassim Santone</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="slide-section">About</a></li>
+            <li><a href="#portfolio" class="slide-section">Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="home">
+      <div class="landing-text">
+        <h1 id="whoami">Kassim Santone</h1>
+        <img id="mypic" src="img/kassim.png">
+        <h2 id="whoami">Software developer with a passion for mathematics.</h2>
+      </div>
+    </div>
+    <div class="padding">
+      <div id="about">
+        <h1 align="center">About</h1>
+        <div class="col-sm-6">
+          <p id="about-paragraph">My name is Kassim Santone and I am a fourth year student at the University of Waterloo pursuing a double major in Computer Science and Pure Mathematics.</p>
+        </div>
+        <div class="col-sm-6">
+          <p id="about-paragraph">I am passionate about software and mathematics, below you will find my portfolio of programming projects and you can click here to view my resume.</p>
+        </div>
+      </div>
+    </div>
+    <div id="fixed"></div>
+    <div class="padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-xs-6">
+            <button class="project-modal" data-toggle="modal" data-target="#mymodal1">
+              <img src="img/toy-library.png" class="project-img">
+            </button>
+            <div class="modal fade" id="mymodal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>Toy Library</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="project-desc">This is a Ruby on Rails project where users can post books for other users to sign out. Users can also search for book using a full-text search implemented by Postgres. User authentication was implemented via a Ruby gem called Devise. Amazon S3 was used to store images.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-xs-5" id="project-info-odd">
+            <h2>Toy Library</h2>
+            <p>A Ruby on Rails project which allows users can search for sign out books posted by other users. Click <a href="http://toylibrary.herokuapp.com" target="_blank">here</a> to be taken to the website and <a href="http://github.com/ksantone/ToyLibrary" target="_blank">here</a> for the source code.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-xs-5" id="project-info-even">
+              <h2>Credit Card Fraud Detector</h2>
+              <p>A data science project written in Python (using Numpy and Pandas) which implements machine learning algorithms to predict if a credit card is fraudulent. Click <a href="https://github.com/ksantone/CreditCardFraudDetector/blob/master/Credit%20Card%20Fraud%20Detector.ipynb" target="_blank">here</a> to see it.</p>
+            </div>
+            <div class="col-sm-6 col-xs-6 project-img-box-even">
+              <button class="project-modal" data-toggle="modal" data-target="#mymodal2">
+                <img src="img/creditcardfrauddetector.jpg" class="project-img">
+              </button>
+              <div class="modal fade" id="mymodal2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>Credit Card Fraud Detector</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is a project which uses machine learning algorithms (Isolation Forest and Local Outlier Factor) to predict whether a given credit card was fraudulent. It is documented on Jupyter Notebook.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-xs-5" id="project-info-odd">
+              <h2>JournalShare</h2>
+              <p>A Python Flask project where users can post journal entries either as private or public to other users. Click <a href="http://journalshare.herokuapp.com" target="_blank">here</a> to go to the website and <a href="http://github.com/ksantone/JournalShare" target="_blank">here</a> to see the source code.</p>
+            </div>
+            <div class="col-sm-6 col-xs-6 project-img-box-odd">
+              <button class="project-modal" data-toggle="modal" data-target="#mymodal3">
+                <img src="img/journalshare.png" class="project-img">
+              </button>
+              <div class="modal fade" id="mymodal3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>Toy Library</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is a Python Flask project where users can create accounts and post journal entries which they can either keep private or share with other users.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-xs-5" id="project-info-even">
+              <h2>MathNews</h2>
+              <p>A clone of HackerNews which uses GraphQL to allow users to receive new MathNews posts in real-time. Click <a href="http://github.com/ksantone/MathNews" target="_blank">here</a> for the source code.</p>
+            </div>
+            <div class="col-sm-6 col-xs-6 project-img-box-even">
+              <button class="project-modal" data-toggle="modal" data-target="#mymodal4">
+                <img src="img/math-news.png" class="project-img">
+              </button>
+              <div class="modal fade" id="mymodal4">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>MathNews</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="project-desc">This is a React+Apollo project which is a clone of HackerNews called MathNews (it takes information from a news source at my university called MathNews). It uses GraphQL as a database.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-xs-5" id="project-info-odd">
+              <h2>Unbeatable Tic-Tac-Toe</h2>
+              <p>A Javascript Tic-Tac-Toe with an unbeatable artificial intelligence implemented via minimax algorithm. Click <a href="http://github.com/ksantone/UnbeatableTicTacToe" target="_blank">here</a> for the source code and <a id="modal-link" data-toggle="modal" data-target="#mymodal5">here</a> to try it out.</p>
+            </div>
+            <div class="col-sm-6 col-xs-6 project-img-box-odd">
+              <button class="project-modal" data-toggle="modal" data-target="#mymodal5">
+                <img src="img/tic-tac-toe.png" class="project-img">
+              </button>
+              <div class="modal fade" id="mymodal5">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3>Unbeatable Tic-Tac-Toe</h3>
+                  </div>
+                  <div class="modal-body" id="tic-tac-toe-modal">
+                    <table>
+                      <tr>
+                        <td class="cell" id="0"></td>
+                        <td class="cell" id="1"></td>
+                        <td class="cell" id="2"></td>
+                      </tr>
+                      <tr>
+                        <td class="cell" id="3"></td>
+                        <td class="cell" id="4"></td>
+                        <td class="cell" id="5"></td>
+                      </tr>
+                      <tr>
+                        <td class="cell" id="6"></td>
+                        <td class="cell" id="7"></td>
+                        <td class="cell" id="8"></td>
+                      </tr>
+                    </table>
+                    <div class="endgame">
+                      <div class="text"></div>
+                      <button onClick="startGame()">Replay</button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid text-center">
+      <div class="row">
+        <div class="center">
+          <h3>Connect With Me</h3>
+          <a href="http://github.com/ksantone" class="fa fa-github" target="_blank"></a>
+          <a href="mailto:kassim.santone@gmail.com" target="_top" class="fa fa-google"></a>
+          <a href="https://www.linkedin.com/in/ksantone/" class="fa fa-linkedin" target="_blank"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scroll.js"></script>
+    <script src="js/tic-tac-toe.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
