@@ -8,6 +8,7 @@
 	background: rgba(0,0,0,0.5);
 	font-size: 1.2em;
 	padding: 22px 8px;
+	height: 120px;
 }
 
 .navbar-brand {
@@ -43,6 +44,10 @@
 
 .navbar-default .navbar-nav li a:hover {
 	text-decoration: underline;
+}
+
+.navbar.shrink {
+	height: 90px;
 }
 
 #home {
