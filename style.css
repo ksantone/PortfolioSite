@@ -5,7 +5,7 @@
 }
 
 .navbar {
-	background: rgba(0,0,0,0.5);
+	background: rgba(55, 94, 4, 0.5);
 	font-size: 1.2em;
 	padding: 22px 8px;
 }
@@ -253,7 +253,10 @@ footer {
 	}
 	.project-img-box {
 		float: none;
+		height: 330px;
+		width: 540px;
 		margin: auto;
+		margin-bottom: 90px;
 	}
 	#project-info {
 		float: none;
