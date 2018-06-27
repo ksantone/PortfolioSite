@@ -8,13 +8,20 @@
 	background: rgba(0,0,0,0.5);
 	font-size: 1.2em;
 	padding: 22px 8px;
-	height: 120px;
 }
 
 .navbar-brand {
 	font-color: #FFF;
 	font-size: 37px;
+	padding-top: 22px;
 	padding-left: 20px;
+	transition: .3s;
+}
+
+.navbar-brand.shrink {
+	min-height: 35px;
+	font-size: 33px;
+	padding-top: 12px;
 }
 
 .navbar-right {
@@ -34,6 +41,16 @@
 }
 
 .navbar-default .navbar-nav li a {
+	transition: .3s;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #FFF;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav.shrink li a {
+	padding-top: 13px;
+	padding-bottom: 13px;
 	color: #FFF;
 }
 
@@ -42,12 +59,26 @@
 	color: #FFF;
 }
 
-.navbar-default .navbar-nav li a:hover {
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav.shrink li a:hover,
+.navbar-default .navbar-nav.shrink li a:hover {
 	text-decoration: underline;
+	color: #FFF;
 }
 
-.navbar.shrink {
-	height: 90px;
+.navbar-toggle {
+	margin-top: 16px;
+	margin-bottom: 20px;
+}
+
+.navbar-toggle.shrink {
+	margin-top: 7px;
+	margin-bottom: 11px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #FFF;
 }
 
 #home {
@@ -110,11 +141,19 @@
 	background-size: cover;
 }
 
-.project-img-box-odd {
+#side-project {
+	display: inline-block;
+}
+
+.project-img-box {
+	height: 220px;
+	width: 360px;
 	float: left;
 }
 
-.project-img-box-even {
+#project-info {
+	height: 220px;
+	width: 360px;
 	float: right;
 }
 
@@ -135,6 +174,7 @@
 }
 
 #project-info-odd {
+	padding-left: 50px;
 	float: right;
 }
 
@@ -168,7 +208,34 @@ footer {
 	max-width: 200px;
 }
 
+@media (max-width: 911px) {
+	#home {
+		background: url(img/macbook-small.jpg) no-repeat center center fixed;
+		display: table;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
+
+	#mypic {
+		width: 250px;
+		height: 250px;
+	}
+}
+
 @media (max-width: 768px) {
+	.navbar-brand, .navbar-brand.shrink {
+		font-size: 30px;
+	}
+	#home {
+		background: url(img/macbook-tiny.jpg) no-repeat center center fixed;
+		display: table;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
 	.landing-text h1 {
 		font-size: 300%;
 	}
@@ -179,6 +246,32 @@ footer {
 	.icon {
 		padding-top: 5%;
 		max-width: 100px;
+	}
+	#mypic {
+		width: 230px;
+		height: 230px;
+	}
+	.project-img-box {
+		float: none;
+		margin: auto;
+	}
+	#project-info {
+		float: none;
+		margin: auto;
+	}
+}
+
+@media (max-width: 614px) {
+	#home {
+		background: url(img/macbook-teeny.jpg) no-repeat center center fixed;
+		display: table;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
+	.landing-text h2 {
+		font-size: 180%;
 	}
 }
 
