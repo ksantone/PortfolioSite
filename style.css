@@ -265,6 +265,9 @@ footer {
 }
 
 @media (max-width: 614px) {
+	.navbar-brand, .navbar-brand.shrink {
+		font-size: 26px;
+	}
 	#home {
 		background: url(img/macbook-teeny.jpg) no-repeat center center fixed;
 		display: table;
@@ -273,11 +276,26 @@ footer {
 		width: 100%;
 		background-size: cover;
 	}
+	.project-img-box {
+		height: 240px;
+		width: 370px;
+	}
 	.landing-text h2 {
 		font-size: 180%;
 	}
 }
 
+@media (max-width: 388px) {
+	.project-img-box {
+		height: 200px;
+		width: 290px;
+		padding-left: 10px;
+	}
+	#project-info {
+		width: 280px;
+		margin: auto;
+	}
+}
 
 
 
