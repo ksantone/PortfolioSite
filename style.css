@@ -219,14 +219,6 @@ footer {
 	.navbar-brand, .navbar-brand.shrink {
 		font-size: 30px;
 	}
-	#home {
-		background: url(img/macbook-small.jpg) no-repeat center center fixed;
-		display: table;
-		height: 100%;
-		position: relative;
-		width: 100%;
-		background-size: cover;
-	}
 	.landing-text h1 {
 		font-size: 300%;
 	}
@@ -255,17 +247,20 @@ footer {
 	}
 }
 
-@media (max-width: 614px) {
-	.navbar-brand, .navbar-brand.shrink {
-		font-size: 26px;
-	}
+@media (max-width: 700px) {
 	#home {
-		background: url(img/macbook-tiny.jpg) no-repeat center center fixed;
+		background: url(img/macbook-small.jpg) no-repeat center center fixed;
 		display: table;
 		height: 100%;
 		position: relative;
 		width: 100%;
 		background-size: cover;
+	}
+}
+
+@media (max-width: 614px) {
+	.navbar-brand, .navbar-brand.shrink {
+		font-size: 26px;
 	}
 	.project-img-box {
 		height: 240px;
@@ -273,6 +268,17 @@ footer {
 	}
 	.landing-text h2 {
 		font-size: 180%;
+	}
+}
+
+@media (max-width: 500px) {
+	#home {
+		background: url(img/macbook-tiny.jpg) no-repeat center center fixed;
+		display: table;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		background-size: cover;
 	}
 }
 
