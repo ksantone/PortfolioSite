@@ -209,15 +209,6 @@ footer {
 }
 
 @media (max-width: 911px) {
-	#home {
-		background: url(img/macbook-small.jpg) no-repeat center center fixed;
-		display: table;
-		height: 100%;
-		position: relative;
-		width: 100%;
-		background-size: cover;
-	}
-
 	#mypic {
 		width: 250px;
 		height: 250px;
@@ -229,7 +220,7 @@ footer {
 		font-size: 30px;
 	}
 	#home {
-		background: url(img/macbook-tiny.jpg) no-repeat center center fixed;
+		background: url(img/macbook-small.jpg) no-repeat center center fixed;
 		display: table;
 		height: 100%;
 		position: relative;
@@ -269,7 +260,7 @@ footer {
 		font-size: 26px;
 	}
 	#home {
-		background: url(img/macbook-teeny.jpg) no-repeat center center fixed;
+		background: url(img/macbook-tiny.jpg) no-repeat center center fixed;
 		display: table;
 		height: 100%;
 		position: relative;
@@ -286,6 +277,14 @@ footer {
 }
 
 @media (max-width: 388px) {
+	#home {
+		background: url(img/macbook-teeny.jpg) no-repeat center center fixed;
+		display: table;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
 	.project-img-box {
 		height: 200px;
 		width: 290px;
