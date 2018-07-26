@@ -63,8 +63,8 @@
 .navbar-default .navbar-nav li a:hover,
 .navbar-default .navbar-nav.shrink li a:hover,
 .navbar-default .navbar-nav.shrink li a:hover {
-	text-decoration: underline;
-	color: #FFF;
+	transition: .5s;
+	color: #49F0FF;
 }
 
 .navbar-toggle {
